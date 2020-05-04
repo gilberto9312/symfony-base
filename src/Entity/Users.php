@@ -34,6 +34,83 @@ class Users implements UserInterface
      */
     private $password;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Event", inversedBy="users")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $event;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Company")
+     * @ORM\JoinColumn(nullable=true)
+     */
+    private $company;
+
+    /**
+     * @ORM\Column(type="string", length=20, nullable=true)
+     */
+    private $identificationCard;
+
+    /**
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $lastName;
+
+    /**
+     * @ORM\Column(type="date", nullable=true)
+     */
+    private $birthdate;
+
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $phone;
+
+    /**
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $note;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $status;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $admin;
+
+    /**
+     * @ORM\Column(type="date")
+     */
+    private $lastEntry;
+
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $accesIp;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $pathImg;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $beenRemove;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $token;
+
 
     public function getId(): ?int
     {
@@ -112,4 +189,174 @@ class Users implements UserInterface
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
     }
+
+    public function getCompany(): ?Company
+    {
+        return $this->company;
+    }
+
+    public function setCompany(?Company $company): self
+    {
+        $this->company = $company;
+
+        return $this;
+    }
+
+    public function getIdentificationCard(): ?string
+    {
+        return $this->identificationCard;
+    }
+
+    public function setIdentificationCard(?string $identificationCard): self
+    {
+        $this->identificationCard = $identificationCard;
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(?string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getLastName(): ?string
+    {
+        return $this->lastName;
+    }
+
+    public function setLastName(?string $lastName): self
+    {
+        $this->lastName = $lastName;
+
+        return $this;
+    }
+
+    public function getBirthdate(): ?\DateTimeInterface
+    {
+        return $this->birthdate;
+    }
+
+    public function setBirthdate(?\DateTimeInterface $birthdate): self
+    {
+        $this->birthdate = $birthdate;
+
+        return $this;
+    }
+
+    public function getPhone(): ?string
+    {
+        return $this->phone;
+    }
+
+    public function setPhone(string $phone): self
+    {
+        $this->phone = $phone;
+
+        return $this;
+    }
+
+    public function getNote(): ?string
+    {
+        return $this->note;
+    }
+
+    public function setNote(?string $note): self
+    {
+        $this->note = $note;
+
+        return $this;
+    }
+
+    public function getStatus(): ?bool
+    {
+        return $this->status;
+    }
+
+    public function setStatus(bool $status): self
+    {
+        $this->status = $status;
+
+        return $this;
+    }
+
+    public function getAdmin(): ?bool
+    {
+        return $this->admin;
+    }
+
+    public function setAdmin(bool $admin): self
+    {
+        $this->admin = $admin;
+
+        return $this;
+    }
+
+    public function getLastEntry(): ?\DateTimeInterface
+    {
+        return $this->lastEntry;
+    }
+
+    public function setLastEntry(\DateTimeInterface $lastEntry): self
+    {
+        $this->lastEntry = $lastEntry;
+
+        return $this;
+    }
+
+    public function getAccesIp(): ?string
+    {
+        return $this->accesIp;
+    }
+
+    public function setAccesIp(string $accesIp): self
+    {
+        $this->accesIp = $accesIp;
+
+        return $this;
+    }
+
+    public function getPathImg(): ?string
+    {
+        return $this->pathImg;
+    }
+
+    public function setPathImg(?string $pathImg): self
+    {
+        $this->pathImg = $pathImg;
+
+        return $this;
+    }
+
+    public function getBeenRemove(): ?bool
+    {
+        return $this->beenRemove;
+    }
+
+    public function setBeenRemove(bool $beenRemove): self
+    {
+        $this->beenRemove = $beenRemove;
+
+        return $this;
+    }
+
+    public function getToken(): ?string
+    {
+        return $this->token;
+    }
+
+    public function setToken(?string $token): self
+    {
+        $this->token = $token;
+
+        return $this;
+    }
+
+
 }

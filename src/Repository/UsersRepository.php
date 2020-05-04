@@ -3,11 +3,13 @@
 namespace App\Repository;
 
 use App\Entity\Users;
+use App\Entity\Company;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 /**
  * @method Users|null find($id, $lockMode = null, $lockVersion = null)
@@ -17,9 +19,13 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class UsersRepository extends ServiceEntityRepository implements PasswordUpgraderInterface
 {
-    public function __construct(ManagerRegistry $registry)
+    private $passwordEncoder;
+    public function __construct(ManagerRegistry $registry,UserPasswordEncoderInterface $passwordEncoder)
     {
         parent::__construct($registry, Users::class);
+        $this->passwordEncoder = $passwordEncoder;
+        
+        
     }
 
     /**
@@ -34,6 +40,54 @@ class UsersRepository extends ServiceEntityRepository implements PasswordUpgrade
         $user->setPassword($newEncodedPassword);
         $this->_em->persist($user);
         $this->_em->flush();
+    }
+
+    public function activate(Users $user){
+
+        try{
+            $user->setToken(null);
+            $user->setStatus(true);
+    
+            $this->_em->persist($user);
+            $this->_em->flush();
+            
+            return true;
+        }
+        catch (Exception $e) {
+            throw $e;
+        }
+    }   
+
+    public function save ($email,$roles,$password,$identificationCard,$name,$lastName,$birthdate,$phone,$note,$status,$admin,$lastEntry,$accesIp,$beenRemove,$pathImg,$token,Company $company){
+ 
+        try {
+            $user = new Users();
+            $user->setEmail($email);
+            $user->setRoles($roles);
+            $user->setPassword($this->passwordEncoder->encodePassword($user,$password));
+            $user->setIdentificationCard($identificationCard);
+            $user->setName($name);
+            $user->setLastName($lastName);
+            $user->setBirthdate($birthdate);
+            $user->setPhone($phone);
+            $user->setNote($note);
+            $user->setAdmin($admin);
+            $user->setLastEntry($lastEntry);
+            $user->setAccesIp($accesIp);
+            $user->setBeenRemove($beenRemove);
+            $user->setPathImg($pathImg);
+            $user->setToken($token);
+            $user->setCompany($company);
+            $this->_em->persist($user);
+            $this->_em->flush();
+
+            return $user;
+        }
+        catch (Exception $e) {
+            throw $e;
+        }
+
+
     }
 
     // /**

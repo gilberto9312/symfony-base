@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}System index{% endblock %}
+
+{% block body %}
+    <h1>System index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>State</th>
+                <th>LocationFileImage</th>
+                <th>Access</th>
+                <th>Type</th>
+                <th>Position</th>
+                <th>CodSystem</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for system in systems %}
+            <tr>
+                <td>{{ system.id }}</td>
+                <td>{{ system.name }}</td>
+                <td>{{ system.state ? 'Yes' : 'No' }}</td>
+                <td>{{ system.locationFileImage }}</td>
+                <td>{{ system.access }}</td>
+                <td>{{ system.type }}</td>
+                <td>{{ system.position }}</td>
+                <td>{{ system.codSystem }}</td>
+                <td>
+                    <a href="{{ path('system_show', {'id': system.id}) }}">show</a>
+                    <a href="{{ path('system_edit', {'id': system.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('system_new') }}">Create new</a>
+{% endblock %}

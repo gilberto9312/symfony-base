@@ -3,3 +3,34 @@
 #    controller: App\Controller\DefaultController::index
 api_login_check:
     path: /api/login_check
+
+test:
+    path: /api/v1/test
+    controller: App\Controller\TestController::index
+    methods: [GET]
+
+menu:
+    path: /api/v1/menu
+    controller: App\Controller\MenuSystemController::index
+    methods: [GET]
+
+#users menu
+user_system:
+    path: /api/v1/user/system
+    controller: App\Controller\UserSystem\UserSystemController::index
+    methods: [GET]
+
+user_right:
+    path: /api/v1/user/right
+    controller: App\Controller\UserSystem\UserRightController::index
+    methods: [GET]
+
+create_user:
+    path: /api/create-user
+    controller: App\Controller\UserSystem\UserCreateController::index
+    methods: [POST]
+
+activate_user:
+    path: /api/activate-user
+    controller: App\Controller\UserSystem\ActivateUserController::index
+    methods: [POST]    

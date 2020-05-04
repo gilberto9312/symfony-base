@@ -5,9 +5,8 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
-class TestController extends AbstractController
+class MenuSystemController extends AbstractController
 {
-    public string $hola;
 
     /**
      * @var TokenStorageInterface
@@ -18,11 +17,10 @@ class TestController extends AbstractController
     {
         $this->tokenStorage = $tokenStorage;
     }
-
     public function index()
     {
-        $token = $this->tokenStorage->getToken();
-        $hola = $token->getUser();
-        return $this->json($hola);
+        $user = $this->tokenStorage->getToken->getUser();
+        return $this->json($user);
+        
     }
 }
