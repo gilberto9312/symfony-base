@@ -26,7 +26,8 @@ class AppFixtures extends Fixture
             'name' => 'Piotr Jura',
             'password' => 'secret123#',
             'roles' => [Users::ROLE_USER],
-            'enabled' => true
+            'enabled' => true,
+            'phone'=>0
         ],
         [
             'username' => 'john_doe',
@@ -34,7 +35,8 @@ class AppFixtures extends Fixture
             'name' => 'John Doe',
             'password' => 'secret123#',
             'roles' => [Users::ROLE_USER],
-            'enabled' => true
+            'enabled' => true,
+            'phone'=>0
         ],
         [
             'username' => 'rob_smith',
@@ -42,7 +44,8 @@ class AppFixtures extends Fixture
             'name' => 'Rob Smith',
             'password' => 'secret123#',
             'roles' => [Users::ROLE_USER],
-            'enabled' => true
+            'enabled' => true,
+            'phone'=>0
         ],
         [
             'username' => 'jenny_rowling',
@@ -50,7 +53,8 @@ class AppFixtures extends Fixture
             'name' => 'Jenny Rowling',
             'password' => 'secret123#',
             'roles' => [Users::ROLE_USER],
-            'enabled' => true
+            'enabled' => true,
+            'phone'=>0
         ],
         [
             'username' => 'han_solo',
@@ -58,7 +62,8 @@ class AppFixtures extends Fixture
             'name' => 'Han Solo',
             'password' => 'secret123#',
             'roles' => [Users::ROLE_USER],
-            'enabled' => false
+            'enabled' => false,
+            'phone'=>0
         ],
         [
             'username' => 'jedi_knight',
@@ -66,7 +71,8 @@ class AppFixtures extends Fixture
             'name' => 'Jedi Knight',
             'password' => 'secret123#',
             'roles' => [Users::ROLE_USER],
-            'enabled' => true
+            'enabled' => true,
+            'phone'=>0
         ],
     ];
 
@@ -145,968 +151,968 @@ class AppFixtures extends Fixture
 
     private const ARRAYCOUNTRIES= [
         [
-            'codCountry'=> 'AF', 
+            'codCountry'=> 'AF',
             'name' => 'Afganistán'
         ],
         [
-            'codCountry'=> 'AX', 
+            'codCountry'=> 'AX',
             'name' => 'Islas Gland'
         ],
         [
-            'codCountry'=> 'AL', 
+            'codCountry'=> 'AL',
             'name' => 'Albania'
         ],
         [
-            'codCountry'=> 'DE', 
+            'codCountry'=> 'DE',
             'name' => 'Alemania'
         ],
         [
-            'codCountry'=> 'AD', 
+            'codCountry'=> 'AD',
             'name' => 'Andorra'
         ],
         [
-            'codCountry'=> 'AO', 
+            'codCountry'=> 'AO',
             'name' => 'Angola'
         ],
         [
-            'codCountry'=> 'AI', 
+            'codCountry'=> 'AI',
             'name' => 'Anguilla'
         ],
         [
-            'codCountry'=> 'AQ', 
+            'codCountry'=> 'AQ',
             'name' => 'Antártida'
         ],
         [
-            'codCountry'=> 'AG', 
+            'codCountry'=> 'AG',
             'name' => 'Antigua y Barbuda'
         ],
         [
-            'codCountry'=> 'AN', 
+            'codCountry'=> 'AN',
             'name' => 'Antillas Holandesas'
         ],
         [
-            'codCountry'=> 'SA', 
+            'codCountry'=> 'SA',
             'name' => 'Arabia Saudí'
         ],
         [
-            'codCountry'=> 'DZ', 
+            'codCountry'=> 'DZ',
             'name' => 'Argelia'
         ],
         [
-            'codCountry'=> 'AR', 
+            'codCountry'=> 'AR',
             'name' => 'Argentina'
         ],
         [
-            'codCountry'=> 'AM', 
+            'codCountry'=> 'AM',
             'name' => 'Armenia'
         ],
         [
-            'codCountry'=> 'AW', 
+            'codCountry'=> 'AW',
             'name' => 'Aruba'
         ],
         [
-            'codCountry'=> 'AU', 
+            'codCountry'=> 'AU',
             'name' => 'Australia'
         ],
         [
-            'codCountry'=> 'AT', 
+            'codCountry'=> 'AT',
             'name' => 'Austria'
         ],
         [
-            'codCountry'=> 'AZ', 
+            'codCountry'=> 'AZ',
             'name' => 'Azerbaiyán'
         ],
         [
-            'codCountry'=> 'BS', 
+            'codCountry'=> 'BS',
             'name' => 'Bahamas'
         ],
         [
-            'codCountry'=> 'BH', 
+            'codCountry'=> 'BH',
             'name' => 'Bahréin'
         ],
         [
-            'codCountry'=> 'BD', 
+            'codCountry'=> 'BD',
             'name' => 'Bangladesh'
         ],
         [
-            'codCountry'=> 'BB', 
+            'codCountry'=> 'BB',
             'name' => 'Barbados'
         ],
         [
-            'codCountry'=> 'BY', 
+            'codCountry'=> 'BY',
             'name' => 'Bielorrusia'
         ],
         [
-            'codCountry'=> 'BE', 
+            'codCountry'=> 'BE',
             'name' => 'Bélgica'
         ],
         [
-            'codCountry'=> 'BZ', 
+            'codCountry'=> 'BZ',
             'name' => 'Belice'
         ],
         [
-            'codCountry'=> 'BJ', 
+            'codCountry'=> 'BJ',
             'name' => 'Benin'
         ],
         [
-            'codCountry'=> 'BM', 
+            'codCountry'=> 'BM',
             'name' => 'Bermudas'
         ],
         [
-            'codCountry'=> 'BT', 
+            'codCountry'=> 'BT',
             'name' => 'Bhután'
         ],
         [
-            'codCountry'=> 'BO', 
+            'codCountry'=> 'BO',
             'name' => 'Bolivia'
         ],
         [
-            'codCountry'=> 'BA', 
+            'codCountry'=> 'BA',
             'name' => 'Bosnia y Herzegovina'
         ],
         [
-            'codCountry'=> 'BW', 
+            'codCountry'=> 'BW',
             'name' => 'Botsuana'
         ],
         [
-            'codCountry'=> 'BV', 
+            'codCountry'=> 'BV',
             'name' => 'Isla Bouvet'
         ],
         [
-            'codCountry'=> 'BR', 
+            'codCountry'=> 'BR',
             'name' => 'Brasil'
         ],
         [
-            'codCountry'=> 'BN', 
+            'codCountry'=> 'BN',
             'name' => 'Brunéi'
         ],
         [
-            'codCountry'=> 'BG', 
+            'codCountry'=> 'BG',
             'name' => 'Bulgaria'
         ],
         [
-            'codCountry'=> 'BF', 
+            'codCountry'=> 'BF',
             'name' => 'Burkina Faso'
         ],
         [
-            'codCountry'=> 'BI', 
+            'codCountry'=> 'BI',
             'name' => 'Burundi'
         ],
         [
-            'codCountry'=> 'CV', 
+            'codCountry'=> 'CV',
             'name' => 'Cabo Verde'
         ],
         [
-            'codCountry'=> 'KY', 
+            'codCountry'=> 'KY',
             'name' => 'Islas Caimán'
         ],
         [
-            'codCountry'=> 'KH', 
+            'codCountry'=> 'KH',
             'name' => 'Camboya'
         ],
         [
-            'codCountry'=> 'CM', 
+            'codCountry'=> 'CM',
             'name' => 'Camerún'
         ],
         [
-            'codCountry'=> 'CA', 
+            'codCountry'=> 'CA',
             'name' => 'Canadá'
         ],
         [
-            'codCountry'=> 'CF', 
+            'codCountry'=> 'CF',
             'name' => 'República Centroafricana'
         ],
         [
-            'codCountry'=> 'TD', 
+            'codCountry'=> 'TD',
             'name' => 'Chad'
         ],
         [
-            'codCountry'=> 'CZ', 
+            'codCountry'=> 'CZ',
             'name' => 'República Checa'
         ],
         [
-            'codCountry'=> 'CL', 
+            'codCountry'=> 'CL',
             'name' => 'Chile'
         ],
         [
-            'codCountry'=> 'CN', 
+            'codCountry'=> 'CN',
             'name' => 'China'
         ],
         [
-            'codCountry'=> 'CY', 
+            'codCountry'=> 'CY',
             'name' => 'Chipre'
         ],
         [
-            'codCountry'=> 'CX', 
+            'codCountry'=> 'CX',
             'name' => 'Isla de Navidad'
         ],
         [
-            'codCountry'=> 'VA', 
+            'codCountry'=> 'VA',
             'name' => 'Ciudad del Vaticano'
         ],
         [
-            'codCountry'=> 'CC', 
+            'codCountry'=> 'CC',
             'name' => 'Islas Cocos'
         ],
         [
-            'codCountry'=> 'CO', 
+            'codCountry'=> 'CO',
             'name' => 'Colombia'
         ],
         [
-            'codCountry'=> 'KM', 
+            'codCountry'=> 'KM',
             'name' => 'Comoras'
         ],
         [
-            'codCountry'=> 'CD', 
+            'codCountry'=> 'CD',
             'name' => 'República Democrática del Congo'
         ],
         [
-            'codCountry'=> 'CG', 
+            'codCountry'=> 'CG',
             'name' => 'Congo'
         ],
         [
-            'codCountry'=> 'CK', 
+            'codCountry'=> 'CK',
             'name' => 'Islas Cook'
         ],
         [
-            'codCountry'=> 'KP', 
+            'codCountry'=> 'KP',
             'name' => 'Corea del Norte'
         ],
         [
-            'codCountry'=> 'KR', 
+            'codCountry'=> 'KR',
             'name' => 'Corea del Sur'
         ],
         [
-            'codCountry'=> 'CI', 
+            'codCountry'=> 'CI',
             'name' => 'Costa de Marfil'
         ],
         [
-            'codCountry'=> 'CR', 
+            'codCountry'=> 'CR',
             'name' => 'Costa Rica'
         ],
         [
-            'codCountry'=> 'HR', 
+            'codCountry'=> 'HR',
             'name' => 'Croacia'
         ],
         [
-            'codCountry'=> 'CU', 
+            'codCountry'=> 'CU',
             'name' => 'Cuba'
         ],
         [
-            'codCountry'=> 'DK', 
+            'codCountry'=> 'DK',
             'name' => 'Dinamarca'
         ],
         [
-            'codCountry'=> 'DM', 
+            'codCountry'=> 'DM',
             'name' => 'Dominica'
         ],
         [
-            'codCountry'=> 'DO', 
+            'codCountry'=> 'DO',
             'name' => 'República Dominicana'
         ],
         [
-            'codCountry'=> 'EC', 
+            'codCountry'=> 'EC',
             'name' => 'Ecuador'
         ],
         [
-            'codCountry'=> 'EG', 
+            'codCountry'=> 'EG',
             'name' => 'Egipto'
         ],
         [
-            'codCountry'=> 'SV', 
+            'codCountry'=> 'SV',
             'name' => 'El Salvador'
         ],
         [
-            'codCountry'=> 'AE', 
+            'codCountry'=> 'AE',
             'name' => 'Emiratos Árabes Unidos'
         ],
         [
-            'codCountry'=> 'ER', 
+            'codCountry'=> 'ER',
             'name' => 'Eritrea'
         ],
         [
-            'codCountry'=> 'SK', 
+            'codCountry'=> 'SK',
             'name' => 'Eslovaquia'
         ],
         [
-            'codCountry'=> 'SI', 
+            'codCountry'=> 'SI',
             'name' => 'Eslovenia'
         ],
         [
-            'codCountry'=> 'ES', 
+            'codCountry'=> 'ES',
             'name' => 'España'
         ],
         [
-            'codCountry'=> 'UM', 
+            'codCountry'=> 'UM',
             'name' => 'Islas ultramarinas de Estados Unidos'
         ],
         [
-            'codCountry'=> 'US', 
+            'codCountry'=> 'US',
             'name' => 'Estados Unidos'
         ],
         [
-            'codCountry'=> 'EE', 
+            'codCountry'=> 'EE',
             'name' => 'Estonia'
         ],
         [
-            'codCountry'=> 'ET', 
+            'codCountry'=> 'ET',
             'name' => 'Etiopía'
         ],
         [
-            'codCountry'=> 'FO', 
+            'codCountry'=> 'FO',
             'name' => 'Islas Feroe'
         ],
         [
-            'codCountry'=> 'PH', 
+            'codCountry'=> 'PH',
             'name' => 'Filipinas'
         ],
         [
-            'codCountry'=> 'FI', 
+            'codCountry'=> 'FI',
             'name' => 'Finlandia'
         ],
         [
-            'codCountry'=> 'FJ', 
+            'codCountry'=> 'FJ',
             'name' => 'Fiyi'
         ],
         [
-            'codCountry'=> 'FR', 
+            'codCountry'=> 'FR',
             'name' => 'Francia'
         ],
         [
-            'codCountry'=> 'GA', 
+            'codCountry'=> 'GA',
             'name' => 'Gabón'
         ],
         [
-            'codCountry'=> 'GM', 
+            'codCountry'=> 'GM',
             'name' => 'Gambia'
         ],
         [
-            'codCountry'=> 'GE', 
+            'codCountry'=> 'GE',
             'name' => 'Georgia'
         ],
         [
-            'codCountry'=> 'GS', 
+            'codCountry'=> 'GS',
             'name' => 'Islas Georgias del Sur y Sandwich del Sur'
         ],
         [
-            'codCountry'=> 'GH', 
+            'codCountry'=> 'GH',
             'name' => 'Ghana'
         ],
         [
-            'codCountry'=> 'GI', 
+            'codCountry'=> 'GI',
             'name' => 'Gibraltar'
         ],
         [
-            'codCountry'=> 'GD', 
+            'codCountry'=> 'GD',
             'name' => 'Granada'
         ],
         [
-            'codCountry'=> 'GR', 
+            'codCountry'=> 'GR',
             'name' => 'Grecia'
         ],
         [
-            'codCountry'=> 'GL', 
+            'codCountry'=> 'GL',
             'name' => 'Groenlandia'
         ],
         [
-            'codCountry'=> 'GP', 
+            'codCountry'=> 'GP',
             'name' => 'Guadalupe'
         ],
         [
-            'codCountry'=> 'GU', 
+            'codCountry'=> 'GU',
             'name' => 'Guam'
         ],
         [
-            'codCountry'=> 'GT', 
+            'codCountry'=> 'GT',
             'name' => 'Guatemala'
         ],
         [
-            'codCountry'=> 'GF', 
+            'codCountry'=> 'GF',
             'name' => 'Guayana Francesa'
         ],
         [
-            'codCountry'=> 'GN', 
+            'codCountry'=> 'GN',
             'name' => 'Guinea'
         ],
         [
-            'codCountry'=> 'GQ', 
+            'codCountry'=> 'GQ',
             'name' => 'Guinea Ecuatorial'
         ],
         [
-            'codCountry'=> 'GW', 
+            'codCountry'=> 'GW',
             'name' => 'Guinea-Bissau'
         ],
         [
-            'codCountry'=> 'GY', 
+            'codCountry'=> 'GY',
             'name' => 'Guyana'
         ],
         [
-            'codCountry'=> 'HT', 
+            'codCountry'=> 'HT',
             'name' => 'Haití'
         ],
         [
-            'codCountry'=> 'HM', 
+            'codCountry'=> 'HM',
             'name' => 'Islas Heard y McDonald'
         ],
         [
-            'codCountry'=> 'HN', 
+            'codCountry'=> 'HN',
             'name' => 'Honduras'
         ],
         [
-            'codCountry'=> 'HK', 
+            'codCountry'=> 'HK',
             'name' => 'Hong Kong'
         ],
         [
-            'codCountry'=> 'HU', 
+            'codCountry'=> 'HU',
             'name' => 'Hungría'
         ],
         [
-            'codCountry'=> 'IN', 
+            'codCountry'=> 'IN',
             'name' => 'India'
         ],
         [
-            'codCountry'=> 'ID', 
+            'codCountry'=> 'ID',
             'name' => 'Indonesia'
         ],
         [
-            'codCountry'=> 'IR', 
+            'codCountry'=> 'IR',
             'name' => 'Irán'
         ],
         [
-            'codCountry'=> 'IQ', 
+            'codCountry'=> 'IQ',
             'name' => 'Iraq'
         ],
         [
-            'codCountry'=> 'IE', 
+            'codCountry'=> 'IE',
             'name' => 'Irlanda'
         ],
         [
-            'codCountry'=> 'IS', 
+            'codCountry'=> 'IS',
             'name' => 'Islandia'
         ],
         [
-            'codCountry'=> 'IL', 
+            'codCountry'=> 'IL',
             'name' => 'Israel'
         ],
         [
-            'codCountry'=> 'IT', 
+            'codCountry'=> 'IT',
             'name' => 'Italia'
         ],
         [
-            'codCountry'=> 'JM', 
+            'codCountry'=> 'JM',
             'name' => 'Jamaica'
         ],
         [
-            'codCountry'=> 'JP', 
+            'codCountry'=> 'JP',
             'name' => 'Japón'
         ],
         [
-            'codCountry'=> 'JO', 
+            'codCountry'=> 'JO',
             'name' => 'Jordania'
         ],
         [
-            'codCountry'=> 'KZ', 
+            'codCountry'=> 'KZ',
             'name' => 'Kazajstán'
         ],
         [
-            'codCountry'=> 'KE', 
+            'codCountry'=> 'KE',
             'name' => 'Kenia'
         ],
         [
-            'codCountry'=> 'KG', 
+            'codCountry'=> 'KG',
             'name' => 'Kirguistán'
         ],
         [
-            'codCountry'=> 'KI', 
+            'codCountry'=> 'KI',
             'name' => 'Kiribati'
         ],
         [
-            'codCountry'=> 'KW', 
+            'codCountry'=> 'KW',
             'name' => 'Kuwait'
         ],
         [
-            'codCountry'=> 'LA', 
+            'codCountry'=> 'LA',
             'name' => 'Laos'
         ],
         [
-            'codCountry'=> 'LS', 
+            'codCountry'=> 'LS',
             'name' => 'Lesotho'
         ],
         [
-            'codCountry'=> 'LV', 
+            'codCountry'=> 'LV',
             'name' => 'Letonia'
         ],
         [
-            'codCountry'=> 'LB', 
+            'codCountry'=> 'LB',
             'name' => 'Líbano'
         ],
         [
-            'codCountry'=> 'LR', 
+            'codCountry'=> 'LR',
             'name' => 'Liberia'
         ],
         [
-            'codCountry'=> 'LY', 
+            'codCountry'=> 'LY',
             'name' => 'Libia'
         ],
         [
-            'codCountry'=> 'LI', 
+            'codCountry'=> 'LI',
             'name' => 'Liechtenstein'
         ],
         [
-            'codCountry'=> 'LT', 
+            'codCountry'=> 'LT',
             'name' => 'Lituania'
         ],
         [
-            'codCountry'=> 'LU', 
+            'codCountry'=> 'LU',
             'name' => 'Luxemburgo'
         ],
         [
-            'codCountry'=> 'MO', 
+            'codCountry'=> 'MO',
             'name' => 'Macao'
         ],
         [
-            'codCountry'=> 'MK', 
+            'codCountry'=> 'MK',
             'name' => 'ARY Macedonia'
         ],
         [
-            'codCountry'=> 'MG', 
+            'codCountry'=> 'MG',
             'name' => 'Madagascar'
         ],
         [
-            'codCountry'=> 'MY', 
+            'codCountry'=> 'MY',
             'name' => 'Malasia'
         ],
         [
-            'codCountry'=> 'MW', 
+            'codCountry'=> 'MW',
             'name' => 'Malawi'
         ],
         [
-            'codCountry'=> 'MV', 
+            'codCountry'=> 'MV',
             'name' => 'Maldivas'
         ],
         [
-            'codCountry'=> 'ML', 
+            'codCountry'=> 'ML',
             'name' => 'Malí'
         ],
         [
-            'codCountry'=> 'MT', 
+            'codCountry'=> 'MT',
             'name' => 'Malta'
         ],
         [
-            'codCountry'=> 'FK', 
+            'codCountry'=> 'FK',
             'name' => 'Islas Malvinas'
         ],
         [
-            'codCountry'=> 'MP', 
+            'codCountry'=> 'MP',
             'name' => 'Islas Marianas del Norte'
         ],
         [
-            'codCountry'=> 'MA', 
+            'codCountry'=> 'MA',
             'name' => 'Marruecos'
         ],
         [
-            'codCountry'=> 'MH', 
+            'codCountry'=> 'MH',
             'name' => 'Islas Marshall'
         ],
         [
-            'codCountry'=> 'MQ', 
+            'codCountry'=> 'MQ',
             'name' => 'Martinica'
         ],
         [
-            'codCountry'=> 'MU', 
+            'codCountry'=> 'MU',
             'name' => 'Mauricio'
         ],
         [
-            'codCountry'=> 'MR', 
+            'codCountry'=> 'MR',
             'name' => 'Mauritania'
         ],
         [
-            'codCountry'=> 'YT', 
+            'codCountry'=> 'YT',
             'name' => 'Mayotte'
         ],
         [
-            'codCountry'=> 'MX', 
+            'codCountry'=> 'MX',
             'name' => 'México'
         ],
         [
-            'codCountry'=> 'FM', 
+            'codCountry'=> 'FM',
             'name' => 'Micronesia'
         ],
         [
-            'codCountry'=> 'MD', 
+            'codCountry'=> 'MD',
             'name' => 'Moldavia'
         ],
         [
-            'codCountry'=> 'MC', 
+            'codCountry'=> 'MC',
             'name' => 'Mónaco'
         ],
         [
-            'codCountry'=> 'MN', 
+            'codCountry'=> 'MN',
             'name' => 'Mongolia'
         ],
         [
-            'codCountry'=> 'MS', 
+            'codCountry'=> 'MS',
             'name' => 'Montserrat'
         ],
         [
-            'codCountry'=> 'MZ', 
+            'codCountry'=> 'MZ',
             'name' => 'Mozambique'
         ],
         [
-            'codCountry'=> 'MM', 
+            'codCountry'=> 'MM',
             'name' => 'Myanmar'
         ],
         [
-            'codCountry'=> 'NA', 
+            'codCountry'=> 'NA',
             'name' => 'Namibia'
         ],
         [
-            'codCountry'=> 'NR', 
+            'codCountry'=> 'NR',
             'name' => 'Nauru'
         ],
         [
-            'codCountry'=> 'NP', 
+            'codCountry'=> 'NP',
             'name' => 'Nepal'
         ],
         [
-            'codCountry'=> 'NI', 
+            'codCountry'=> 'NI',
             'name' => 'Nicaragua'
         ],
         [
-            'codCountry'=> 'NE', 
+            'codCountry'=> 'NE',
             'name' => 'Níger'
         ],
         [
-            'codCountry'=> 'NG', 
+            'codCountry'=> 'NG',
             'name' => 'Nigeria'
         ],
         [
-            'codCountry'=> 'NU', 
+            'codCountry'=> 'NU',
             'name' => 'Niue'
         ],
         [
-            'codCountry'=> 'NF', 
+            'codCountry'=> 'NF',
             'name' => 'Isla Norfolk'
         ],
         [
-            'codCountry'=> 'NO', 
+            'codCountry'=> 'NO',
             'name' => 'Noruega'
         ],
         [
-            'codCountry'=> 'NC', 
+            'codCountry'=> 'NC',
             'name' => 'Nueva Caledonia'
         ],
         [
-            'codCountry'=> 'NZ', 
+            'codCountry'=> 'NZ',
             'name' => 'Nueva Zelanda'
         ],
         [
-            'codCountry'=> 'OM', 
+            'codCountry'=> 'OM',
             'name' => 'Omán'
         ],
         [
-            'codCountry'=> 'NL', 
+            'codCountry'=> 'NL',
             'name' => 'Países Bajos'
         ],
         [
-            'codCountry'=> 'PK', 
+            'codCountry'=> 'PK',
             'name' => 'Pakistán'
         ],
         [
-            'codCountry'=> 'PW', 
+            'codCountry'=> 'PW',
             'name' => 'Palau'
         ],
         [
-            'codCountry'=> 'PS', 
+            'codCountry'=> 'PS',
             'name' => 'Palestina'
         ],
         [
-            'codCountry'=> 'PA', 
+            'codCountry'=> 'PA',
             'name' => 'Panamá'
         ],
         [
-            'codCountry'=> 'PG', 
+            'codCountry'=> 'PG',
             'name' => 'Papúa Nueva Guinea'
         ],
         [
-            'codCountry'=> 'PY', 
+            'codCountry'=> 'PY',
             'name' => 'Paraguay'
         ],
         [
-            'codCountry'=> 'PE', 
+            'codCountry'=> 'PE',
             'name' => 'Perú'
         ],
         [
-            'codCountry'=> 'PN', 
+            'codCountry'=> 'PN',
             'name' => 'Islas Pitcairn'
         ],
         [
-            'codCountry'=> 'PF', 
+            'codCountry'=> 'PF',
             'name' => 'Polinesia Francesa'
         ],
         [
-            'codCountry'=> 'PL', 
+            'codCountry'=> 'PL',
             'name' => 'Polonia'
         ],
         [
-            'codCountry'=> 'PT', 
+            'codCountry'=> 'PT',
             'name' => 'Portugal'
         ],
         [
-            'codCountry'=> 'PR', 
+            'codCountry'=> 'PR',
             'name' => 'Puerto Rico'
         ],
         [
-            'codCountry'=> 'QA', 
+            'codCountry'=> 'QA',
             'name' => 'Qatar'
         ],
         [
-            'codCountry'=> 'GB', 
+            'codCountry'=> 'GB',
             'name' => 'Reino Unido'
         ],
         [
-            'codCountry'=> 'RE', 
+            'codCountry'=> 'RE',
             'name' => 'Reunión'
         ],
         [
-            'codCountry'=> 'RW', 
+            'codCountry'=> 'RW',
             'name' => 'Ruanda'
         ],
         [
-            'codCountry'=> 'RO', 
+            'codCountry'=> 'RO',
             'name' => 'Rumania'
         ],
         [
-            'codCountry'=> 'RU', 
+            'codCountry'=> 'RU',
             'name' => 'Rusia'
         ],
         [
-            'codCountry'=> 'EH', 
+            'codCountry'=> 'EH',
             'name' => 'Sahara Occidental'
         ],
         [
-            'codCountry'=> 'SB', 
+            'codCountry'=> 'SB',
             'name' => 'Islas Salomón'
         ],
         [
-            'codCountry'=> 'WS', 
+            'codCountry'=> 'WS',
             'name' => 'Samoa'
         ],
         [
-            'codCountry'=> 'AS', 
+            'codCountry'=> 'AS',
             'name' => 'Samoa Americana'
         ],
         [
-            'codCountry'=> 'KN', 
+            'codCountry'=> 'KN',
             'name' => 'San Cristóbal y Nevis'
         ],
         [
-            'codCountry'=> 'SM', 
+            'codCountry'=> 'SM',
             'name' => 'San Marino'
         ],
         [
-            'codCountry'=> 'PM', 
+            'codCountry'=> 'PM',
             'name' => 'San Pedro y Miquelón'
         ],
         [
-            'codCountry'=> 'VC', 
+            'codCountry'=> 'VC',
             'name' => 'San Vicente y las Granadinas'
         ],
         [
-            'codCountry'=> 'SH', 
+            'codCountry'=> 'SH',
             'name' => 'Santa Helena'
         ],
         [
-            'codCountry'=> 'LC', 
+            'codCountry'=> 'LC',
             'name' => 'Santa Lucía'
         ],
         [
-            'codCountry'=> 'ST', 
+            'codCountry'=> 'ST',
             'name' => 'Santo Tomé y Príncipe'
         ],
         [
-            'codCountry'=> 'SN', 
+            'codCountry'=> 'SN',
             'name' => 'Senegal'
         ],
         [
-            'codCountry'=> 'CS', 
+            'codCountry'=> 'CS',
             'name' => 'Serbia y Montenegro'
         ],
         [
-            'codCountry'=> 'SC', 
+            'codCountry'=> 'SC',
             'name' => 'Seychelles'
         ],
         [
-            'codCountry'=> 'SL', 
+            'codCountry'=> 'SL',
             'name' => 'Sierra Leona'
         ],
         [
-            'codCountry'=> 'SG', 
+            'codCountry'=> 'SG',
             'name' => 'Singapur'
         ],
         [
-            'codCountry'=> 'SY', 
+            'codCountry'=> 'SY',
             'name' => 'Siria'
         ],
         [
-            'codCountry'=> 'SO', 
+            'codCountry'=> 'SO',
             'name' => 'Somalia'
         ],
         [
-            'codCountry'=> 'LK', 
+            'codCountry'=> 'LK',
             'name' => 'Sri Lanka'
         ],
         [
-            'codCountry'=> 'SZ', 
+            'codCountry'=> 'SZ',
             'name' => 'Suazilandia'
         ],
         [
-            'codCountry'=> 'ZA', 
+            'codCountry'=> 'ZA',
             'name' => 'Sudáfrica'
         ],
         [
-            'codCountry'=> 'SD', 
+            'codCountry'=> 'SD',
             'name' => 'Sudán'
         ],
         [
-            'codCountry'=> 'SE', 
+            'codCountry'=> 'SE',
             'name' => 'Suecia'
         ],
         [
-            'codCountry'=> 'CH', 
+            'codCountry'=> 'CH',
             'name' => 'Suiza'
         ],
         [
-            'codCountry'=> 'SR', 
+            'codCountry'=> 'SR',
             'name' => 'Surinam'
         ],
         [
-            'codCountry'=> 'SJ', 
+            'codCountry'=> 'SJ',
             'name' => 'Svalbard y Jan Mayen'
         ],
         [
-            'codCountry'=> 'TH', 
+            'codCountry'=> 'TH',
             'name' => 'Tailandia'
         ],
         [
-            'codCountry'=> 'TW', 
+            'codCountry'=> 'TW',
             'name' => 'Taiwán'
         ],
         [
-            'codCountry'=> 'TZ', 
+            'codCountry'=> 'TZ',
             'name' => 'Tanzania'
         ],
         [
-            'codCountry'=> 'TJ', 
+            'codCountry'=> 'TJ',
             'name' => 'Tayikistán'
         ],
         [
-            'codCountry'=> 'IO', 
+            'codCountry'=> 'IO',
             'name' => 'Territorio Británico del Océano Índico'
         ],
         [
-            'codCountry'=> 'TF', 
+            'codCountry'=> 'TF',
             'name' => 'Territorios Australes Franceses'
         ],
         [
-            'codCountry'=> 'TL', 
+            'codCountry'=> 'TL',
             'name' => 'Timor Oriental'
         ],
         [
-            'codCountry'=> 'TG', 
+            'codCountry'=> 'TG',
             'name' => 'Togo'
         ],
         [
-            'codCountry'=> 'TK', 
+            'codCountry'=> 'TK',
             'name' => 'Tokelau'
         ],
         [
-            'codCountry'=> 'TO', 
+            'codCountry'=> 'TO',
             'name' => 'Tonga'
         ],
         [
-            'codCountry'=> 'TT', 
+            'codCountry'=> 'TT',
             'name' => 'Trinidad y Tobago'
         ],
         [
-            'codCountry'=> 'TN', 
+            'codCountry'=> 'TN',
             'name' => 'Túnez'
         ],
         [
-            'codCountry'=> 'TC', 
+            'codCountry'=> 'TC',
             'name' => 'Islas Turcas y Caicos'
         ],
         [
-            'codCountry'=> 'TM', 
+            'codCountry'=> 'TM',
             'name' => 'Turkmenistán'
         ],
         [
-            'codCountry'=> 'TR', 
+            'codCountry'=> 'TR',
             'name' => 'Turquía'
         ],
         [
-            'codCountry'=> 'TV', 
+            'codCountry'=> 'TV',
             'name' => 'Tuvalu'
         ],
         [
-            'codCountry'=> 'UA', 
+            'codCountry'=> 'UA',
             'name' => 'Ucrania'
         ],
         [
-            'codCountry'=> 'UG', 
+            'codCountry'=> 'UG',
             'name' => 'Uganda'
         ],
         [
-            'codCountry'=> 'UY', 
+            'codCountry'=> 'UY',
             'name' => 'Uruguay'
         ],
         [
-            'codCountry'=> 'UZ', 
+            'codCountry'=> 'UZ',
             'name' => 'Uzbekistán'
         ],
         [
-            'codCountry'=> 'VU', 
+            'codCountry'=> 'VU',
             'name' => 'Vanuatu'
         ],
         [
-            'codCountry'=> 'VE', 
+            'codCountry'=> 'VE',
             'name' => 'Venezuela'
         ],
         [
-            'codCountry'=> 'VN', 
+            'codCountry'=> 'VN',
             'name' => 'Vietnam'
         ],
         [
-            'codCountry'=> 'VG', 
+            'codCountry'=> 'VG',
             'name' => 'Islas Vírgenes Británicas'
         ],
         [
-            'codCountry'=> 'VI', 
+            'codCountry'=> 'VI',
             'name' => 'Islas Vírgenes de los Estados Unidos'
         ],
         [
-            'codCountry'=> 'WF', 
+            'codCountry'=> 'WF',
             'name' => 'Wallis y Futuna'
         ],
         [
-            'codCountry'=> 'YE', 
+            'codCountry'=> 'YE',
             'name' => 'Yemen'
         ],
         [
-            'codCountry'=> 'DJ', 
+            'codCountry'=> 'DJ',
             'name' => 'Yibuti'
         ],
         [
-            'codCountry'=> 'ZM', 
+            'codCountry'=> 'ZM',
             'name' => 'Zambia'
         ],
         [
-            'codCountry'=> 'ZW', 
+            'codCountry'=> 'ZW',
             'name' => 'Zimbabue'
         ]
     ];
 
-    
+
     private const EVENT = [
             [
                 'event'=>'insert',
@@ -1160,13 +1166,13 @@ class AppFixtures extends Fixture
 
     }
 
-    
+
 
     public function loadSystem(ObjectManager $manager){
 
         foreach (self::SYSTEM as $key => $value) {
             $system = new System();
-            
+
             $system->setName($value['name']);
             $system->setPosition($value['position']);
             $system->setState($value['state']);
@@ -1175,6 +1181,7 @@ class AppFixtures extends Fixture
             $system->setLocationFileImage($value['locationFileImage']);
             $system->setCodSystem($value['codsystem']);
             $system->setComponent($value['component']);
+            $system->setDefaults(true);
 
             $manager->persist($system);
 
@@ -1207,8 +1214,8 @@ class AppFixtures extends Fixture
 
                         $manager->persist($menu);
                     }
-                    
-                    
+
+
                 }
 
         }
@@ -1218,7 +1225,7 @@ class AppFixtures extends Fixture
 
     public function loadEvent(ObjectManager $manager){
 
-        
+
 
         foreach (self::EVENT as $key => $value) {
             $event = new Event();
@@ -1278,14 +1285,21 @@ class AppFixtures extends Fixture
                     $userFixture['password']
                 )
             );
-            $user->setRoles($userFixture['roles']);
 
-            
+            $user->setRoles($userFixture['roles']);
+            $user->setPhone($userFixture['phone']);
+            $user->setStatus(true);
+            $user->setAdmin(true);
+            $user->setLastEntry(new \DateTime());
+            $user->setAccesIp('192.168.1.1');
+            $user->setBeenRemove(true);
+
+
             $this->addReference('user_'.$userFixture['username'], $user);
 
             $manager->persist($user);
 
-            
+
         }
 
         $manager->flush();
